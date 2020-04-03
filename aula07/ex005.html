@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Operadores parte 1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Exercício 005</title>
+</head>
+
+<body>
+    <script>
+        var sal = Number(window.prompt('Qual seu salário atual?'))
+        var rise = Number(window.prompt('Qual o valor de porcentagem de aumento?'))
+
+        var newSal = sal + (sal * (rise / 100))
+
+        alert(`Seu novo salário é de  ${newSal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Você merece!`)
+    </script>
+</body>
+
+</html>

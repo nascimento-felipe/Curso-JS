@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Condições if() e else parte 1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - Exercício 11 b</title>
+
+    <style>
+        body {
+            font: normal 14pt Arial;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+
+    Seu país: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+
+            var txtnac = window.document.getElementById('txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = String(txtnac.value).toLowerCase()
+
+            if (nac == 'brasil') {
+                res.innerHTML = '<p>Você é <strong>brasileiro</strong>!</p>'
+            }
+            else {
+                res.innerHTML = '<p>Você é <strong>estrangeiro</strong>!</p>'
+            }
+
+        }
+    </script>
+</body>
+
+</html>

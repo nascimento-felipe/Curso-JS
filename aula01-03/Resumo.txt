@@ -1,0 +1,4 @@
+Aulas sobre o básico do javascript
+    * História,
+    * Instalação de Softwares
+    * Demonstrações de js em páginas da internet

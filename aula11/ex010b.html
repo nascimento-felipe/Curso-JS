@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Condições if() e else parte 1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - Exercício 010 b</title>
+
+    <style>
+        body {
+            font: normal 14pt Arial;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+
+        function calcular() {
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('div#res')
+            var velK = Number(txtv.value) //velocidade em Km/h
+            var velM = (velK / 3.6).toFixed(2) //velocidade em M/h
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${velK} Km/h</strong> ou <strong>${velM} M/s</strong>.</p>`
+
+            if (velK > 60) {
+                res.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso de velocidade.</p>`
+            }
+
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+
+    </script>
+</body>
+
+</html>

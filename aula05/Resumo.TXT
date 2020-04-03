@@ -1,0 +1,5 @@
+Aula sobre variáveis e tipos primitivos.
+	Exemplos:
+		* Number (10 ; 7; 3,5)
+		* String ( "1" )
+		* Boolean (true / false) 
